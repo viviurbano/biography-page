@@ -1,0 +1,88 @@
+/* -------- EXTERNAL CSS */
+/* Global reset to prevent default margin and padding. 
+Setting box-sizing to control the size until border-box*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul,
+li,
+a {
+  list-style: none;
+  color: darkcyan;
+  display: inline;
+  margin-right: 0.5em;
+}
+span {
+  font-weight: 700;
+  color: #cecece;
+  font-size: 1.5em;
+  letter-spacing: 0.5px;
+}
+h2,
+h5,
+p {
+  padding-bottom: 1.2em;
+}
+h3 {
+  color: mediumorchid;
+}
+/* container set rules */
+#container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+/* section-hero to set padding and margin of elements */
+.section-hero {
+  padding: 5em 0;
+  margin: 0 auto;
+}
+/* hero because is call-to-action */
+.hero {
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+}
+.hero-description {
+  font-size: 1.5em;
+  line-height: 1.6;
+  margin: 2.4rem 0;
+}
+.heading-primary {
+  letter-spacing: 0.1em;
+  font-size: 3em;
+}
+.heading-primary span {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  background: #f0ff1c;
+  background: linear-gradient(to right, #f0ff1c 0%, #00ff00 32%, #9521cf 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.social-link {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding: 0.5em;
+}
+.social-link:active,
+.social-link:hover {
+  background-color: greenyellow;
+  border: none;
+}
+.section-resume {
+  max-width: 130rem;
+  padding: 1em 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 1.5em 3.6em;
+  align-items: center;
+  font-size: 1.4em;
+  line-height: 1.3;
+}
