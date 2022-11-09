@@ -1,4 +1,3 @@
-/* -------- EXTERNAL CSS */
 /* Global reset to prevent default margin and padding. 
 Setting box-sizing to control the size until border-box*/
 * {
@@ -6,13 +5,11 @@ Setting box-sizing to control the size until border-box*/
   margin: 0;
   box-sizing: border-box;
 }
-ul,
-li,
-a {
-  list-style: none;
-  color: darkcyan;
-  display: inline;
-  margin-right: 0.5em;
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #0b1830;
+  color: #d4e0ed;
+  overflow-x: hidden;
 }
 span {
   font-weight: 700;
@@ -28,20 +25,62 @@ p {
 h3 {
   color: mediumorchid;
 }
+img {
+  width: 60%;
+  border-radius: 20em;
+  border: goldenrod solid 0.3rem;
+}
+ul {
+  margin: 0;
+  display: flex;
+}
+ul li {
+  list-style: none;
+  margin: 0 20px;
+  transition: 0.5s;
+}
+ul li a {
+  color: darkcyan;
+  display: block;
+  position: relative;
+  text-decoration: none;
+  transition: 0.8s;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+/* make the links blurry */
+ul:hover li a {
+  transform: scale(1.2);
+  opacity: 0.8;
+  filter: blur(0.1rem);
+}
+ul li a:hover {
+  transform: scale(1.3);
+  opacity: 0.9;
+  filter: blur(0);
+  text-decoration: none;
+  color: #fff;
+}
+ul li a:hover:before {
+  transition: transform 0.6s;
+  transform-origin: left;
+  font-weight: 700;
+  transform: scaleX(0);
+}
 /* container set rules */
-#container {
+.container {
   max-width: 120rem;
   padding: 0 3.2rem;
   margin: 0 auto;
 }
 /* section-hero to set padding and margin of elements */
 .section-hero {
-  padding: 5em 0;
+  padding: 2em 0;
   margin: 0 auto;
 }
 /* hero because is call-to-action */
 .hero {
-  padding: 0 3.2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 9.6rem;
@@ -71,18 +110,19 @@ h3 {
   margin-bottom: 10px;
   padding: 0.5em;
 }
-.social-link:active,
-.social-link:hover {
-  background-color: greenyellow;
-  border: none;
-}
 .section-resume {
   max-width: 130rem;
-  padding: 1em 3.2rem;
+  padding: 3rem 3.2rem;
   display: grid;
   grid-template-columns: 1fr 4fr;
   gap: 1.5em 3.6em;
   align-items: center;
   font-size: 1.4em;
   line-height: 1.3;
+}
+/* id selector */
+#menu-items {
+  text-decoration: none;
+  padding: 1.2rem 0;
+  font-size: 1.2rem;
 }
