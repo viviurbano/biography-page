@@ -25,7 +25,7 @@ p {
 h3 {
   color: mediumorchid;
 }
-img {
+.profile-picture {
   width: 60%;
   border-radius: 20em;
   border: goldenrod solid 0.3rem;
@@ -125,4 +125,17 @@ ul li a:hover:before {
   text-decoration: none;
   padding: 1.2rem 0;
   font-size: 1.2rem;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 6.2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #0b2b30;
+  margin-bottom: 1rem;
+}
+.img-stats {
+  height: 15em;
+  margin: 2rem;
 }
